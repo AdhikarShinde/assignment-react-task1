@@ -1,0 +1,29 @@
+.calloutBlockContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.calloutAlignContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  width: 70%;
+}
+
+.calloutBlockTitle {
+  text-align: center;
+}
+
+.calloutBlockSubtitle {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .calloutAlignContainer {
+    width: 100%;
+  }
+}

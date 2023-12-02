@@ -1,0 +1,54 @@
+.splitBannerContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 6rem;
+}
+
+.splitBannerContainer.swap {
+  flex-direction: row-reverse;
+}
+
+.splitBannerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 50%;
+}
+
+.splitBannerButtonContainer {
+  display: flex;
+  gap: 28px;
+}
+
+.illustrationImage {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .splitBannerContainer {
+    flex-direction: column;
+  }
+  .splitBannerContainer.swap {
+    flex-direction: column-reverse;
+  }
+  .splitBannerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+  }
+  .splitBannerButtonContainer {
+    flex-direction: column;
+  }
+  .illustrationImage {
+    width: 100%;
+  }
+  .splitBannerHeading {
+    text-align: center;
+  }
+  .splitBannerSubheading {
+    text-align: center;
+  }
+}

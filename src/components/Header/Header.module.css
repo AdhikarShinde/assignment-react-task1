@@ -1,0 +1,24 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 34px;
+}
+
+.headerContent {
+  display: flex;
+  gap: 8px;
+}
+
+.menuIcon {
+  display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+  .buttonsContainer {
+    display: none;
+  }
+  .menuIcon {
+    display: block;
+    width: 24px;
+  }
+}
