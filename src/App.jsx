@@ -1,4 +1,3 @@
-import "./App.css";
 import Header from "./components/Header/Header";
 import SplitBanner from "./components/SplitBanner/SplitBanner";
 import Footer from "./components/Footer/Footer";
@@ -9,12 +8,13 @@ import {
   splitBannerProps,
   calloutBlockProps,
 } from "./helper/constants";
+import styles from "./App.module.css";
 
 function App() {
   return (
     <>
       <Header />
-      <main className="mainContainer">
+      <main className={styles.mainContainer}>
         <SplitBanner
           heading={splitBannerProps[0].heading}
           subheading={splitBannerProps[0].subheading}
@@ -28,7 +28,7 @@ function App() {
           title={calloutBlockProps[0].title}
           subtitle={calloutBlockProps[0].subtitle}
         />
-        <div className="cards">
+        <div className={styles.cards}>
           {cardBlockProps.map((card, index) => (
             <CardBlock
               key={index}

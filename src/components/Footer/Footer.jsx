@@ -1,14 +1,14 @@
 import React from "react";
-import Logo from "../../assets/images/logo-white.svg";
+import LogoImg from "../../assets/images/logo-white.svg";
 import Button from "../common/Button/Button";
 import styles from "./Footer.module.css";
 import { footerProps } from "../../helper/constants";
-
+import Logo from "../common/Logo/Logo";
 const Footer = () => {
   return (
     <div className={styles.footerContainer}>
       <div className={styles.LogoSection}>
-        <img src={Logo} alt="" className={styles.footerLogo} />
+        <Logo image={LogoImg} altText="" className={styles.footerLogo} />
       </div>
       <div className={styles.linksContainer}>
         {footerProps.map((section, index) => (
